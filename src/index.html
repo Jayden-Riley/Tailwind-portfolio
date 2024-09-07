@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Jayden's Portfolio</title>
+</head>
+<body class="bg-gray-800 text-gray-100">
+
+  <!-- Header Section -->
+  <header class="bg-gray-900 text-white px-4 py-6 flex flex-col lg:flex-row items-center justify-between relative">
+    <!-- Logo and Hamburger Icon -->
+    <div class="flex items-center w-full lg:w-auto">
+      <h1 class="text-2xl font-bold flex-1  lg:text-left">Jayden</h1>
+      <button id="menu-button" class="lg:hidden text-2xl">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Navigation Links for Mobile -->
+    <nav id="mobile-menu" class="lg:hidden absolute top-16 left-0 w-full bg-gray-900 text-white flex flex-col items-center space-y-4 py-4 hidden">
+      <ul>
+        <li><a href="#home" class="hover:text-cyan-400 transition duration-300 ease-in-out">Home</a></li>
+        <li><a href="#projects" class="hover:text-cyan-400 transition duration-300 ease-in-out">Projects</a></li>
+        <li><a href="#contact" class="hover:text-cyan-400 transition duration-300 ease-in-out">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Navigation Links for Desktop -->
+    <nav id="desktop-menu" class="hidden lg:flex space-x-6">
+      <ul class="flex space-x-6">
+        <li><a href="#home" class="hover:text-cyan-400 transition duration-300 ease-in-out">Home</a></li>
+        <li><a href="#projects" class="hover:text-cyan-400 transition duration-300 ease-in-out">Projects</a></li>
+        <li><a href="#contact" class="hover:text-cyan-400 transition duration-300 ease-in-out">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hire Me Button -->
+    <div class="hidden lg:block mt-4 lg:mt-0 bg-red-700 border-transparent rounded hover:bg-red-800 transition duration-300 ease-in-out">
+      <button class="px-4 py-2">Hire Me</button>
+    </div>
+    
+  </header>
+
+  <!-- Hero Section -->
+  <section class="flex flex-col lg:flex-row items-center p-8 min-h-screen">
+    <!-- Text Description -->
+    <div class="w-full lg:w-1/2 lg:p-4 ">
+      <h1 class="text-3xl lg:text-5xl font-bold mb-4">Hi, I'm <span class="text-pink-500">Jayden</span></h1>
+      <p class="text-base lg:text-lg mb-6">I'm a passionate software engineer with experience in developing robust and scalable applications. I specialize in web development and enjoy crafting efficient, user-friendly solutions. With a strong background in modern technologies and a love for problem-solving, I strive to create innovative software that meets the needs of users and drives business success.</p>
+      <div class="flex space-x-4">
+        <a href="https://twitter.com/yourprofile" target="_blank" class="hover:opacity-75 transition duration-300 ease-in-out">
+          <img src="/images/twitter.png" alt="Twitter" class="h-8 lg:h-10">
+        </a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" class="hover:opacity-75 transition duration-300 ease-in-out">
+          <img src="/images/instagram.png" alt="LinkedIn" class="h-8 lg:h-10">
+        </a>
+        <a href="https://github.com/Jayden-Riley" target="_blank" class="hover:opacity-75 transition duration-300 ease-in-out">
+          <img src="/images/github.png" alt="GitHub" class="h-8 lg:h-10">
+        </a>
+      </div>
+    </div>
+    <!-- Image -->
+    <div class="w-full lg:w-1/2 p-4 flex justify-center lg:justify-end mt-10">
+      <img src="https://koutroumanos.com/wp-content/uploads/2024/01/Oculoplastic-surgeon-London.jpeg" alt="Your Image" class="w-full max-w-xs lg:max-w-md rounded-lg shadow-lg">
+    </div>
+  </section>
+
+  <!-- Script for Mobile Menu Toggle -->
+  <script>
+    const menuButton = document.getElementById('menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
